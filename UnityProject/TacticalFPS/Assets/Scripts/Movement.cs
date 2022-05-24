@@ -21,6 +21,8 @@ public class Movement : MonoBehaviour
     public float crouchAcc;
     public float crouchMaxSpeed;
 
+    public Lean lean;
+
     private bool spaceLastFrame = false;
     private bool cLastFrame = false;
     private bool ctrlLastFrame = false;
@@ -100,21 +102,22 @@ public class Movement : MonoBehaviour
         switch (currentState)
         {
             case MoveState.Walking:
-                targetPos = new Vector3(0f, 0.73f, 0f);
+                targetPos = new Vector3(0, 1.25699997f, 0);
                 xVel += aimed ? aimAcc * moveDirection.y : xAcc * moveDirection.y;
                 xVel = aimed ? Mathf.Clamp(xVel, -aimMaxSpeed, aimMaxSpeed) : Mathf.Clamp(xVel, -xMax, xMax);
                 zVel += aimed ? aimAcc * moveDirection.x : zAcc * moveDirection.x;
                 zVel = aimed ? Mathf.Clamp(zVel, -aimMaxSpeed, aimMaxSpeed) : Mathf.Clamp(zVel, -zMax, zMax);
                 break;
             case MoveState.Running:
-                targetPos = new Vector3(0f, 0.73f, 0f);
+                lean.lean = 0;
+                targetPos = new Vector3(0, 1.25699997f, 0);
                 xVel += sprintAcc;
                 xVel = Mathf.Clamp(xVel, 0f, sprintMaxSpeed);
                 zVel += zAcc * moveDirection.x;
                 zVel = Mathf.Clamp(zVel, -zMax, zMax);
                 break;
             case MoveState.Crouched:
-                targetPos = new Vector3(0, 0.35f, 0);
+                targetPos = new Vector3(0, 0.55f, 0);
                 xVel += aimed ? aimAcc * moveDirection.y : crouchAcc * moveDirection.y;
                 xVel = aimed ? Mathf.Clamp(xVel, -aimMaxSpeed, aimMaxSpeed) : Mathf.Clamp(xVel, -crouchMaxSpeed, crouchMaxSpeed);
                 zVel += aimed ? aimAcc * moveDirection.x : crouchAcc * moveDirection.x;
@@ -128,7 +131,7 @@ public class Movement : MonoBehaviour
                 zVel = aimed ? Mathf.Clamp(zVel, -aimMaxSpeed / 2, aimMaxSpeed / 2) : Mathf.Clamp(zVel, -crouchMaxSpeed / 2, crouchMaxSpeed / 2);
                 break;
             case MoveState.Idle:
-                targetPos = new Vector3(0f, 0.73f, 0f);
+                targetPos = new Vector3(0, 1.25699997f, 0);
                 break;
             default:
                 break;
@@ -151,6 +154,7 @@ public class Movement : MonoBehaviour
         if (grounded)
         {
             yVel = inputs[4] && !spaceLastFrame ? Mathf.Sqrt(gravity * 2f * jumpHeight) : -_hit.distance;
+            if(inputs[4] && !spaceLastFrame) lean.lean = 0;
         }
 
         Vector2 xzvelocity = new Vector2(xVel, zVel);

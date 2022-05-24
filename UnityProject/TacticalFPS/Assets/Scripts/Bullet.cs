@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
         if (collision.transform.CompareTag("Target"))
         {
             Destroy(collision.gameObject);
-            Destroy(this.gameObject);
         }
+            Destroy(this.gameObject);
     }
 }
