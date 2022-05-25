@@ -27,6 +27,7 @@ public class Sway : MonoBehaviour
     private float breathStrength;
     private float breathSpeed;
 
+    [HideInInspector] public bool aim = false;
 
     private void Start()
     {
@@ -34,15 +35,18 @@ public class Sway : MonoBehaviour
         weapon_origin_position = weaponSwayParent.localPosition;
         camera_origin_position = cameraTransform.localPosition;
 
+
+
         breathStrength = idleBreathCoefficient;
         breathSpeed = idleBreathSpeedCoefficient;
     }
 
     private void Update()
     {
+
         UpdateSway();
         UpdateBreath();
-        UpdateADS(Input.GetMouseButton(1));
+        UpdateADS(aim);
     }
 
     private void UpdateADS(bool aiming)
@@ -80,7 +84,7 @@ public class Sway : MonoBehaviour
 
     private void UpdateBreath()
     {
-        if (Input.GetMouseButton(1))
+        if (aim)
         {
             breathSpeed /= 5;
             breathStrength /= 15;
@@ -91,7 +95,7 @@ public class Sway : MonoBehaviour
         float zOffset = Mathf.Cos(Time.time / 4 * breathSpeed);
         Vector3 offSet = new Vector3(xOffset * breathStrength, yOffset * breathStrength, zOffset * breathStrength);
 
-        weaponSwayParent.localPosition = Vector3.Lerp(weaponSwayParent.localPosition, weapon_origin_position + offSet, (Input.GetMouseButton(1)) ? Time.deltaTime * 8f : Time.deltaTime * breathSpeed);
+        weaponSwayParent.localPosition = Vector3.Lerp(weaponSwayParent.localPosition, weapon_origin_position + offSet, (aim) ? Time.deltaTime * 8f : Time.deltaTime * breathSpeed);
         //cameraTransform.localPosition = Vector3.Lerp(cameraTransform.localPosition, camera_origin_position - (offSet), Time.deltaTime * breathSpeed);
     }
 

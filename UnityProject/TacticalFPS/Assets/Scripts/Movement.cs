@@ -26,13 +26,18 @@ public class Movement : MonoBehaviour
     private bool spaceLastFrame = false;
     private bool cLastFrame = false;
     private bool ctrlLastFrame = false;
+    private bool aimLastFrame = false;
     private bool crouching = false;
     private bool prone = false;
+
+    private bool groundedLastFrame;
 
     public float sprintAcc;
     public float sprintMaxSpeed;
     public float aimAcc;
     public float aimMaxSpeed;
+
+    public Sway sway;
 
     private float yVel;
     private float xVel;
@@ -48,6 +53,7 @@ public class Movement : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         rb = GetComponent<Rigidbody>();
+        sway = GetComponent<Sway>();
     }
 
     // Update is called once per frame
@@ -81,11 +87,12 @@ public class Movement : MonoBehaviour
         MoveState currentState = MoveState.Idle;
 
         bool grounded = Physics.Raycast(controller.transform.position - (Vector3.up * 0.95f), Vector3.down, out RaycastHit _hit, 0.1f);
-        bool aimed = grounded && inputs[6];
+        bool toggleAimed = grounded && inputs[6] && !aimLastFrame;
         bool changecrouched = !cLastFrame && grounded && inputs[7];
         bool changeprone = !ctrlLastFrame && grounded && inputs[8];
-        bool sprint = inputs[5] && moveDirection.y > 0 && !aimed && !crouching && !prone;
+        bool sprint = inputs[5] && moveDirection.y > 0 && !crouching && !prone;
 
+        if (toggleAimed) sway.aim = !sway.aim;
 
         if (changeprone && !prone && crouching) crouching = !crouching;
         if (changecrouched && !crouching && prone) prone = !prone;
@@ -103,14 +110,15 @@ public class Movement : MonoBehaviour
         {
             case MoveState.Walking:
                 targetPos = new Vector3(0, 1.25699997f, 0);
-                xVel += aimed ? aimAcc * moveDirection.y : xAcc * moveDirection.y;
-                xVel = aimed ? Mathf.Clamp(xVel, -aimMaxSpeed, aimMaxSpeed) : Mathf.Clamp(xVel, -xMax, xMax);
-                zVel += aimed ? aimAcc * moveDirection.x : zAcc * moveDirection.x;
-                zVel = aimed ? Mathf.Clamp(zVel, -aimMaxSpeed, aimMaxSpeed) : Mathf.Clamp(zVel, -zMax, zMax);
+                xVel += sway.aim ? aimAcc * moveDirection.y : xAcc * moveDirection.y;
+                xVel = sway.aim ? Mathf.Clamp(xVel, -aimMaxSpeed, aimMaxSpeed) : Mathf.Clamp(xVel, -xMax, xMax);
+                zVel += sway.aim ? aimAcc * moveDirection.x : zAcc * moveDirection.x;
+                zVel = sway.aim ? Mathf.Clamp(zVel, -aimMaxSpeed, aimMaxSpeed) : Mathf.Clamp(zVel, -zMax, zMax);
                 break;
             case MoveState.Running:
                 lean.lean = 0;
                 targetPos = new Vector3(0, 1.25699997f, 0);
+                sway.aim = false;
                 xVel += sprintAcc;
                 xVel = Mathf.Clamp(xVel, 0f, sprintMaxSpeed);
                 zVel += zAcc * moveDirection.x;
@@ -118,17 +126,17 @@ public class Movement : MonoBehaviour
                 break;
             case MoveState.Crouched:
                 targetPos = new Vector3(0, 0.55f, 0);
-                xVel += aimed ? aimAcc * moveDirection.y : crouchAcc * moveDirection.y;
-                xVel = aimed ? Mathf.Clamp(xVel, -aimMaxSpeed, aimMaxSpeed) : Mathf.Clamp(xVel, -crouchMaxSpeed, crouchMaxSpeed);
-                zVel += aimed ? aimAcc * moveDirection.x : crouchAcc * moveDirection.x;
-                zVel = aimed ? Mathf.Clamp(zVel, -aimMaxSpeed, aimMaxSpeed) : Mathf.Clamp(zVel, -crouchMaxSpeed, crouchMaxSpeed);
+                xVel += sway.aim ? aimAcc * moveDirection.y : crouchAcc * moveDirection.y;
+                xVel = sway.aim ? Mathf.Clamp(xVel, -aimMaxSpeed, aimMaxSpeed) : Mathf.Clamp(xVel, -crouchMaxSpeed, crouchMaxSpeed);
+                zVel += sway.aim ? aimAcc * moveDirection.x : crouchAcc * moveDirection.x;
+                zVel = sway.aim ? Mathf.Clamp(zVel, -aimMaxSpeed, aimMaxSpeed) : Mathf.Clamp(zVel, -crouchMaxSpeed, crouchMaxSpeed);
                 break;
             case MoveState.Prone:
                 targetPos = new Vector3(0, 0f, 0);
-                xVel += aimed ? aimAcc / 2 * moveDirection.y : crouchAcc / 2 * moveDirection.y;
-                xVel = aimed ? Mathf.Clamp(xVel, -aimMaxSpeed / 2, aimMaxSpeed / 2) : Mathf.Clamp(xVel, -crouchMaxSpeed / 2, crouchMaxSpeed / 2);
-                zVel += aimed ? aimAcc / 2 * moveDirection.x : crouchAcc / 2 * moveDirection.x;
-                zVel = aimed ? Mathf.Clamp(zVel, -aimMaxSpeed / 2, aimMaxSpeed / 2) : Mathf.Clamp(zVel, -crouchMaxSpeed / 2, crouchMaxSpeed / 2);
+                xVel += sway.aim ? aimAcc / 2 * moveDirection.y : crouchAcc / 2 * moveDirection.y;
+                xVel = sway.aim ? Mathf.Clamp(xVel, -aimMaxSpeed / 2, aimMaxSpeed / 2) : Mathf.Clamp(xVel, -crouchMaxSpeed / 2, crouchMaxSpeed / 2);
+                zVel += sway.aim ? aimAcc / 2 * moveDirection.x : crouchAcc / 2 * moveDirection.x;
+                zVel = sway.aim ? Mathf.Clamp(zVel, -aimMaxSpeed / 2, aimMaxSpeed / 2) : Mathf.Clamp(zVel, -crouchMaxSpeed / 2, crouchMaxSpeed / 2);
                 break;
             case MoveState.Idle:
                 targetPos = new Vector3(0, 1.25699997f, 0);
@@ -149,12 +157,14 @@ public class Movement : MonoBehaviour
             zVel = Mathf.MoveTowards(zVel, 0f, zDeAcc);
         }
 
+        if (!groundedLastFrame && grounded) cameraTransform.GetComponent<CamController>().Shake();
+
         yVel -= gravity;
 
         if (grounded)
         {
             yVel = inputs[4] && !spaceLastFrame ? Mathf.Sqrt(gravity * 2f * jumpHeight) : -_hit.distance;
-            if(inputs[4] && !spaceLastFrame) lean.lean = 0;
+            if (inputs[4] && !spaceLastFrame) { lean.lean = 0; sway.aim = false; }
         }
 
         Vector2 xzvelocity = new Vector2(xVel, zVel);
@@ -168,6 +178,9 @@ public class Movement : MonoBehaviour
         spaceLastFrame = inputs[4];
         cLastFrame = inputs[7];
         ctrlLastFrame = inputs[8];
+        aimLastFrame = inputs[6];
+
+        groundedLastFrame = grounded;
 
         controller.Move(movement);
     }
