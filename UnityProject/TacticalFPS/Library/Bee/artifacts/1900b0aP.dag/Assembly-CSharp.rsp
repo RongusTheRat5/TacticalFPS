@@ -307,11 +307,16 @@
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.State.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.ref.dll"
 "Assets/Prefabs/Hands_Weapons_Animations_Pack_Update/Effects/Automatic_rifle/FX/Script/LightCurves.cs"
+"Assets/Prefabs/JMO Assets/WarFX/Scripts/CFX_AutoDestructShuriken.cs"
+"Assets/Prefabs/JMO Assets/WarFX/Scripts/CFX_LightIntensityFade.cs"
+"Assets/Prefabs/JMO Assets/WarFX/Scripts/WFX_BulletHoleDecal.cs"
+"Assets/Prefabs/JMO Assets/WarFX/Scripts/WFX_LightFlicker.cs"
 "Assets/Scripts/Bullet.cs"
 "Assets/Scripts/CamController.cs"
 "Assets/Scripts/Lean.cs"
 "Assets/Scripts/Movement.cs"
 "Assets/Scripts/Sway.cs"
+"Assets/Scripts/Timer.cs"
 "Assets/Scripts/Weapon.cs"
 -langversion:9.0
 

@@ -54,15 +54,15 @@ public class Sway : MonoBehaviour
         Vector3 targetPosition = new Vector3();
         if (aiming)
         {
-            targetPosition = new Vector3(0, 0, 0.615999997f);
+            targetPosition = new Vector3(-0.593999982f, 0.0890000015f, -0.243900001f);
             weaponCamera.fieldOfView = Mathf.Lerp(weaponCamera.fieldOfView, 25f, Time.deltaTime * 8f);
         }
         else
         {
-            targetPosition = new Vector3(0.595000029f, -0.188999504f, 0.927999973f);
+            targetPosition = new Vector3(0, -0.1f, 0f);
             weaponCamera.fieldOfView = Mathf.Lerp(weaponCamera.fieldOfView, 60f, Time.deltaTime * 8f);
         }
-        weaponParent.localPosition = Vector3.Lerp(weaponParent.localPosition, targetPosition, Time.deltaTime * /*ADS SPEED*/ 8f);
+        weaponParent.parent.localPosition = Vector3.Lerp(weaponParent.parent.localPosition, targetPosition, Time.deltaTime * /*ADS SPEED*/ 8f);
     }
 
     private void UpdateSway()

@@ -24,6 +24,8 @@ public class Weapon : MonoBehaviour
 
     private Sway sway;
 
+    private Animator animator;
+
     public Vector2[] recoilValues;
     private Vector2 lastRecoil;
 
@@ -37,6 +39,7 @@ public class Weapon : MonoBehaviour
         holder = transform.parent.parent;
         sway = transform.root.GetComponent<Sway>();
         magCap = magMaxCap;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -85,6 +88,7 @@ public class Weapon : MonoBehaviour
         heat = 0;
         lastRecoil = Vector2.zero;
         reloading = true;
+        animator.SetTrigger("Reload");
         yield return new WaitForSeconds(2f);
         magCap = magMaxCap;
         reloading = false;  
