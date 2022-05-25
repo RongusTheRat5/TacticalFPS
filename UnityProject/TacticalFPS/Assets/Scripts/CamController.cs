@@ -10,6 +10,9 @@ public class CamController : MonoBehaviour
     [HideInInspector] public float verticalRotation;
     [HideInInspector] public float horizontalRotation;
 
+    public float duration;
+    public AnimationCurve curve;
+
     private void Start()
     {
         verticalRotation = transform.localEulerAngles.x;
@@ -37,5 +40,26 @@ public class CamController : MonoBehaviour
 
 
 
+    }
+
+    public void Shake()
+    {
+        StartCoroutine("Shaking");
+    }
+
+    IEnumerator Shaking()
+    {
+        Vector3 startPosition = transform.localPosition;
+        float elapsedTime = 0f;
+
+        while(elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            float strength = curve.Evaluate(elapsedTime / duration);
+            transform.localPosition = startPosition + Random.insideUnitSphere * strength;
+            yield return null;
+        }
+
+        transform.localPosition = startPosition;
     }
 }

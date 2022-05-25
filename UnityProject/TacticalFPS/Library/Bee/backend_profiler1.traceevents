@@ -1,4 +1,5 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+<<<<<<< HEAD
 ,{ "pid":12345, "tid":0, "ts":1653417669916735, "dur":1175, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1653417669917918, "dur":1695, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
 ,{ "pid":12345, "tid":0, "ts":1653417669919662, "dur":39, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
@@ -1671,4 +1672,539 @@
 ,{ "pid":12345, "tid":12, "ts":1653417681325484, "dur":178141, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":12, "ts":1653417681503626, "dur":172273, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1653417681680464, "dur":5272, "ph":"X", "name": "ProfilerWriteOutput" }
+=======
+,{ "pid":12345, "tid":0, "ts":1653418801229212, "dur":1826, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801231054, "dur":80, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1653418801231152, "dur":37, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1653418801231191, "dur":745, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1653418801231989, "dur":735, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801232724, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801401570, "dur":416, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801401986, "dur":22, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402008, "dur":8, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402016, "dur":19, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402035, "dur":65, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402100, "dur":30, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402130, "dur":6, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402136, "dur":24, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402160, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402165, "dur":15, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402180, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402184, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402194, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402198, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402207, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402211, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402219, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402223, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402233, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402237, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402246, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402249, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402260, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402263, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402273, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402291, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801402295, "dur":3015, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1653418801233261, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1653418801233262, "dur":13770, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1653418801247054, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1653418801247061, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1653418801249250, "dur":542, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1653418801249795, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1653418801249884, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1653418801250608, "dur":5743, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1653418801256354, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1653418801256496, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1653418801258134, "dur":2122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1653418801260356, "dur":187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1653418801260548, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1653418801261688, "dur":8759, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1653418801270560, "dur":1125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1653418801271689, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1653418801271696, "dur":3880, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1653418801275987, "dur":1252, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1653418801277244, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1653418801277253, "dur":4473, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1653418801282031, "dur":1188, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1653418801283224, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1653418801283233, "dur":3843, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1653418801287193, "dur":1256, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1653418801288459, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1653418801288474, "dur":4179, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1653418801292778, "dur":795, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1653418801293583, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1653418801293598, "dur":3240, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1653418801296953, "dur":1067, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":1, "ts":1653418801298028, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1653418801298045, "dur":3304, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":1, "ts":1653418801301488, "dur":758, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1653418801302253, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1653418801302265, "dur":4787, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1653418801307207, "dur":798, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.ProBuilder.KdTree.dll" }}
+,{ "pid":12345, "tid":1, "ts":1653418801308015, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1653418801308033, "dur":4055, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.ProBuilder.KdTree.dll" }}
+,{ "pid":12345, "tid":1, "ts":1653418801312212, "dur":2459, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":1, "ts":1653418801314676, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1653418801314687, "dur":4075, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":1, "ts":1653418801318923, "dur":1978, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":1, "ts":1653418801320908, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1653418801320919, "dur":5632, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":1, "ts":1653418801326681, "dur":167, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1653418801326858, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1653418801327027, "dur":4418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1653418801331735, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1653418801331895, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1653418801331929, "dur":5412, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1653418801337470, "dur":64060, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1653418801233360, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1653418801233361, "dur":13682, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1653418801247055, "dur":903, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1653418801247963, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1653418801252013, "dur":5111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1653418801257283, "dur":666, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1653418801257957, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1653418801257970, "dur":3077, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1653418801261139, "dur":992, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801262136, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1653418801263058, "dur":3999, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801267151, "dur":1487, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801268647, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1653418801268661, "dur":4017, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801272797, "dur":3953, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801276758, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1653418801276767, "dur":4656, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801281539, "dur":783, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801282346, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1653418801282406, "dur":4355, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801286878, "dur":1452, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801288340, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1653418801288354, "dur":4252, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801292722, "dur":933, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801293661, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1653418801293672, "dur":3950, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801297741, "dur":1754, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801299504, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1653418801299520, "dur":4451, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801304150, "dur":670, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801305080, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1653418801305093, "dur":3762, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801309005, "dur":1298, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801310313, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1653418801310329, "dur":4109, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801314593, "dur":1116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801315719, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1653418801315735, "dur":9941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801325804, "dur":1630, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801327444, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1653418801327656, "dur":4643, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":2, "ts":1653418801332432, "dur":118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/resources.assets" }}
+,{ "pid":12345, "tid":2, "ts":1653418801332559, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1653418801332572, "dur":3640, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/resources.assets" }}
+,{ "pid":12345, "tid":2, "ts":1653418801336335, "dur":65222, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1653418801233314, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1653418801233314, "dur":13732, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1653418801247055, "dur":882, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1653418801247940, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1653418801253068, "dur":5184, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1653418801258444, "dur":3017, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801261467, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1653418801262166, "dur":2989, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801265251, "dur":1626, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801266885, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1653418801266898, "dur":2932, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801269944, "dur":1190, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801271138, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1653418801271145, "dur":4229, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801275556, "dur":1015, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801276580, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1653418801276594, "dur":4417, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801281120, "dur":777, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801281902, "dur":126, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1653418801282039, "dur":3073, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801285217, "dur":794, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801286020, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1653418801286035, "dur":3935, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801290099, "dur":1222, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801291355, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1653418801291364, "dur":3182, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801294661, "dur":1023, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801295689, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1653418801295704, "dur":4207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801300034, "dur":2112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801302151, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1653418801302162, "dur":4740, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801307047, "dur":937, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.ProBuilder.Poly2Tri.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801307995, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1653418801308011, "dur":4380, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.ProBuilder.Poly2Tri.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801312545, "dur":896, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801313447, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1653418801313457, "dur":3762, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801317354, "dur":7167, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801324527, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1653418801324538, "dur":8221, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1653418801336256, "dur":65315, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1653418801233521, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1653418801233522, "dur":13574, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1653418801247096, "dur":434, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1653418801247534, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1653418801253119, "dur":4236, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1653418801257435, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1653418801257624, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1653418801257936, "dur":3179, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1653418801261244, "dur":850, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801262103, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1653418801263175, "dur":3621, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801266973, "dur":1382, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801268360, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1653418801268369, "dur":3207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801271687, "dur":1132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801272825, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1653418801272836, "dur":2961, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801275993, "dur":1183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801277181, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1653418801277195, "dur":5100, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801282408, "dur":1227, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801283640, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1653418801283649, "dur":4263, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801288045, "dur":844, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801288898, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1653418801288912, "dur":4139, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801293169, "dur":1080, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801294260, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1653418801294270, "dur":4289, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801299334, "dur":1117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801300457, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1653418801300472, "dur":4310, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801304914, "dur":1208, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801306131, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1653418801306145, "dur":4622, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801311003, "dur":1516, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801312533, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1653418801312548, "dur":3352, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801316032, "dur":2248, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801318289, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1653418801318304, "dur":3293, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801321715, "dur":986, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801322709, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1653418801322724, "dur":4485, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":4, "ts":1653418801327330, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":4, "ts":1653418801327654, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1653418801327665, "dur":4624, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":4, "ts":1653418801332434, "dur":148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/level0.resS" }}
+,{ "pid":12345, "tid":4, "ts":1653418801332788, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1653418801332829, "dur":7430, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/level0.resS" }}
+,{ "pid":12345, "tid":4, "ts":1653418801340372, "dur":61286, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1653418801233461, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1653418801233461, "dur":13616, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1653418801247078, "dur":466, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1653418801247548, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1653418801253797, "dur":4581, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1653418801258471, "dur":23745, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":5, "ts":1653418801282223, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1653418801282375, "dur":9952, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":5, "ts":1653418801292457, "dur":3624, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1653418801296087, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1653418801296097, "dur":5586, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1653418801301810, "dur":1002, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":5, "ts":1653418801302822, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1653418801302837, "dur":4459, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":5, "ts":1653418801307431, "dur":2178, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.ProBuilder.dll" }}
+,{ "pid":12345, "tid":5, "ts":1653418801309619, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1653418801309633, "dur":6894, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.ProBuilder.dll" }}
+,{ "pid":12345, "tid":5, "ts":1653418801316734, "dur":7642, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":5, "ts":1653418801324382, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1653418801324396, "dur":6970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":5, "ts":1653418801331484, "dur":625, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":5, "ts":1653418801332115, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1653418801332129, "dur":2814, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":5, "ts":1653418801335068, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":5, "ts":1653418801335212, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1653418801335228, "dur":3345, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":5, "ts":1653418801338707, "dur":62825, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1653418801233507, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1653418801233507, "dur":13537, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1653418801247054, "dur":249, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1653418801247308, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1653418801254521, "dur":3946, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1653418801258573, "dur":2316, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement.exe" }}
+,{ "pid":12345, "tid":6, "ts":1653418801260896, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1653418801260903, "dur":4063, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement.exe" }}
+,{ "pid":12345, "tid":6, "ts":1653418801265068, "dur":769, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801265856, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1653418801265879, "dur":2955, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801269057, "dur":1063, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801270125, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1653418801270136, "dur":4527, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801274785, "dur":1301, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801276096, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1653418801276110, "dur":5460, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801281689, "dur":940, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801282639, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1653418801282653, "dur":3924, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801286698, "dur":866, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801287616, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1653418801287631, "dur":3371, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801291144, "dur":897, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801292050, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1653418801292069, "dur":3540, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801295739, "dur":889, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801296638, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1653418801296654, "dur":3997, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801300774, "dur":1109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801301889, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1653418801301899, "dur":4208, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801306203, "dur":767, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.ProBuilder.Stl.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801306980, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1653418801306995, "dur":5078, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.ProBuilder.Stl.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801312203, "dur":1463, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801313672, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1653418801313687, "dur":4260, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801318093, "dur":5191, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801323290, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1653418801323300, "dur":5618, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1653418801329044, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":6, "ts":1653418801329178, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1653418801329188, "dur":6109, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":6, "ts":1653418801335431, "dur":488, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/boot.config" }}
+,{ "pid":12345, "tid":6, "ts":1653418801335927, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1653418801335940, "dur":3239, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/boot.config" }}
+,{ "pid":12345, "tid":6, "ts":1653418801339316, "dur":62360, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1653418801233601, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1653418801233602, "dur":13451, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1653418801247054, "dur":914, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1653418801247971, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1653418801253257, "dur":4465, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1653418801257825, "dur":890, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1653418801258751, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1653418801258762, "dur":3459, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1653418801262344, "dur":948, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801263296, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1653418801263553, "dur":3283, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801266935, "dur":1052, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801267992, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1653418801268002, "dur":4689, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801272812, "dur":1421, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801274241, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1653418801274255, "dur":5541, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801279907, "dur":991, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801280902, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1653418801280909, "dur":2675, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801283703, "dur":770, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801284482, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1653418801284495, "dur":5071, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801289739, "dur":1249, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801290994, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1653418801291007, "dur":3518, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801294632, "dur":1431, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801296069, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1653418801296082, "dur":5528, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801301752, "dur":806, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801302568, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1653418801302583, "dur":5245, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801307935, "dur":1043, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.ProBuilder.Csg.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801308988, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1653418801309007, "dur":4515, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.ProBuilder.Csg.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801313834, "dur":1400, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801315238, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1653418801315246, "dur":3985, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801319465, "dur":3727, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801323200, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1653418801323211, "dur":4806, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":7, "ts":1653418801328141, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1653418801328282, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1653418801328296, "dur":73062, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1653418801401442, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":7, "ts":1653418801401449, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1653418801233652, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1653418801233652, "dur":13424, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1653418801247077, "dur":1076, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1653418801248157, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1653418801253669, "dur":4614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1653418801258380, "dur":186, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":8, "ts":1653418801258572, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1653418801258585, "dur":4137, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":8, "ts":1653418801262830, "dur":1037, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801263875, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1653418801263888, "dur":3513, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801267837, "dur":1115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801268959, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1653418801268970, "dur":3828, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801272913, "dur":794, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801273715, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1653418801273726, "dur":3868, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801277748, "dur":1038, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801278795, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1653418801278810, "dur":3552, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801282485, "dur":923, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801283417, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1653418801283431, "dur":4620, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801288168, "dur":821, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801288994, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1653418801289004, "dur":4360, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801293668, "dur":1303, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801294977, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1653418801294991, "dur":4080, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801299225, "dur":1340, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801300574, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1653418801300590, "dur":4185, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801304905, "dur":756, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801305670, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1653418801305686, "dur":4893, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801310748, "dur":1410, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801312167, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1653418801312182, "dur":6280, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801318626, "dur":1564, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801320200, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1653418801320215, "dur":4707, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801325051, "dur":2001, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801327057, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1653418801327068, "dur":5773, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1653418801333049, "dur":272, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/level0" }}
+,{ "pid":12345, "tid":8, "ts":1653418801333339, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1653418801333348, "dur":2910, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/level0" }}
+,{ "pid":12345, "tid":8, "ts":1653418801336387, "dur":65181, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1653418801233727, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1653418801233728, "dur":13347, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1653418801247076, "dur":346, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":9, "ts":1653418801247427, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1653418801254700, "dur":3670, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":9, "ts":1653418801258488, "dur":97965, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":9, "ts":1653418801356460, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1653418801356472, "dur":29841, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":9, "ts":1653418801386427, "dur":15211, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1653418801233796, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1653418801233797, "dur":13281, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1653418801247082, "dur":1096, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1653418801248182, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1653418801253474, "dur":4486, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1653418801258062, "dur":204, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":10, "ts":1653418801258273, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1653418801258288, "dur":4118, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":10, "ts":1653418801262518, "dur":1180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801263706, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1653418801263720, "dur":3689, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801267687, "dur":1193, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801268885, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1653418801268895, "dur":4549, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801273556, "dur":883, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801274444, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1653418801274494, "dur":3110, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801277735, "dur":863, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801278604, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1653418801278619, "dur":3897, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801282626, "dur":1169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801283875, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1653418801283883, "dur":4556, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801288554, "dur":769, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801289331, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1653418801289345, "dur":4512, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801293968, "dur":861, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801294838, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1653418801294855, "dur":3533, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801298503, "dur":2131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801300643, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1653418801300658, "dur":5096, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801305944, "dur":854, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801306808, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1653418801306823, "dur":4403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801311345, "dur":1748, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801313102, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1653418801313114, "dur":4768, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801318003, "dur":1099, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801319124, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1653418801319140, "dur":2922, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801322237, "dur":13636, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801335882, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1653418801335897, "dur":8970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":10, "ts":1653418801345007, "dur":56527, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1653418801233901, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1653418801233902, "dur":13171, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1653418801247074, "dur":281, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":11, "ts":1653418801247359, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1653418801253386, "dur":5022, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":11, "ts":1653418801258505, "dur":4012, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":11, "ts":1653418801262521, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1653418801262530, "dur":3603, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":11, "ts":1653418801266237, "dur":1301, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1653418801267545, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1653418801267558, "dur":2676, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1653418801270338, "dur":978, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1653418801271321, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1653418801271333, "dur":3661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1653418801275112, "dur":1314, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1653418801276435, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1653418801276449, "dur":4337, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1653418801280897, "dur":858, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1653418801281858, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1653418801281870, "dur":3685, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1653418801285665, "dur":833, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1653418801286504, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1653418801286514, "dur":4543, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1653418801291197, "dur":907, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1653418801292110, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1653418801292119, "dur":3418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1653418801295687, "dur":832, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1653418801296528, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1653418801296543, "dur":4348, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1653418801301015, "dur":725, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":11, "ts":1653418801301750, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1653418801301764, "dur":4071, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":11, "ts":1653418801305948, "dur":594, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":11, "ts":1653418801306548, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1653418801306559, "dur":3989, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":11, "ts":1653418801310718, "dur":25264, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":11, "ts":1653418801335992, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1653418801336007, "dur":8677, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":11, "ts":1653418801344820, "dur":56866, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1653418801233951, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1653418801233952, "dur":13100, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1653418801247053, "dur":249, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1653418801247309, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1653418801253199, "dur":4802, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1653418801258100, "dur":192, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":12, "ts":1653418801258298, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1653418801258309, "dur":2899, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":12, "ts":1653418801261322, "dur":1285, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1653418801262615, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1653418801263239, "dur":3861, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1653418801267206, "dur":1604, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1653418801268815, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1653418801268825, "dur":4349, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1653418801273319, "dur":1211, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1653418801274536, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1653418801274678, "dur":4252, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1653418801279040, "dur":1018, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1653418801280067, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1653418801280082, "dur":3199, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1653418801283392, "dur":906, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1653418801284303, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1653418801284312, "dur":4243, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1653418801288658, "dur":882, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1653418801289548, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1653418801289558, "dur":4749, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1653418801294450, "dur":1080, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1653418801295538, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1653418801295553, "dur":4368, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1653418801300052, "dur":659, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":12, "ts":1653418801300721, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1653418801300735, "dur":4247, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":12, "ts":1653418801305287, "dur":1528, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":12, "ts":1653418801306821, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1653418801306832, "dur":4667, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":12, "ts":1653418801311649, "dur":3224, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":12, "ts":1653418801314879, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1653418801314889, "dur":10722, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":12, "ts":1653418801325919, "dur":406, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":12, "ts":1653418801326335, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1653418801327193, "dur":2986, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":12, "ts":1653418801330308, "dur":369, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":12, "ts":1653418801330685, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1653418801330696, "dur":4476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":12, "ts":1653418801335302, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/jesse/Desktop/tacFPS build/Movement_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":12, "ts":1653418801335446, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1653418801335465, "dur":3120, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/jesse/Desktop/tacFPS build/Movement_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":12, "ts":1653418801338718, "dur":62857, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1653418801407997, "dur":3176, "ph":"X", "name": "ProfilerWriteOutput" }
+>>>>>>> d7c352edebf027b3788e1958e957cd90750a5a14
 ,

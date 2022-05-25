@@ -7,7 +7,7 @@ public class Lean : MonoBehaviour
     public float leanValue;
     public float leanSpeed;
 
-    private int lean = 0;
+    [HideInInspector] public int lean = 0;
 
 
     // Start is called before the first frame update
