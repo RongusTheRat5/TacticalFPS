@@ -6,6 +6,8 @@ using UnityEngine;
 public class Sway : MonoBehaviour
 {
 
+    public Weapon currentWeapon;
+
     public float swayIntensity;
     public float swaySmoothness;
 
@@ -46,24 +48,9 @@ public class Sway : MonoBehaviour
 
         UpdateSway();
         UpdateBreath();
-        UpdateADS(aim);
     }
 
-    private void UpdateADS(bool aiming)
-    {
-        Vector3 targetPosition = new Vector3();
-        if (aiming)
-        {
-            targetPosition = new Vector3(-0.593999982f, 0.0890000015f, -0.243900001f);
-            weaponCamera.fieldOfView = Mathf.Lerp(weaponCamera.fieldOfView, 25f, Time.deltaTime * 8f);
-        }
-        else
-        {
-            targetPosition = new Vector3(0, -0.1f, 0f);
-            weaponCamera.fieldOfView = Mathf.Lerp(weaponCamera.fieldOfView, 60f, Time.deltaTime * 8f);
-        }
-        weaponParent.parent.localPosition = Vector3.Lerp(weaponParent.parent.localPosition, targetPosition, Time.deltaTime * /*ADS SPEED*/ 8f);
-    }
+
 
     private void UpdateSway()
     {

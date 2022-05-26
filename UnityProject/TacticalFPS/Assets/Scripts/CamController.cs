@@ -42,12 +42,12 @@ public class CamController : MonoBehaviour
 
     }
 
-    public void Shake()
+    public void Shake(float strength)
     {
-        StartCoroutine("Shaking");
+        StartCoroutine("Shaking", strength);
     }
 
-    IEnumerator Shaking()
+    IEnumerator Shaking(float strength_multi)
     {
         Vector3 startPosition = transform.localPosition;
         float elapsedTime = 0f;
@@ -56,7 +56,7 @@ public class CamController : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
             float strength = curve.Evaluate(elapsedTime / duration);
-            transform.localPosition = startPosition + Random.insideUnitSphere * strength;
+            transform.localPosition = startPosition + Random.insideUnitSphere * strength * strength_multi;
             yield return null;
         }
 

@@ -157,7 +157,7 @@ public class Movement : MonoBehaviour
             zVel = Mathf.MoveTowards(zVel, 0f, zDeAcc);
         }
 
-        if (!groundedLastFrame && grounded) cameraTransform.GetComponent<CamController>().Shake();
+        if (!groundedLastFrame && grounded) cameraTransform.GetComponent<CamController>().Shake(3f);
 
         yVel -= gravity;
 

@@ -365,6 +365,7 @@
 "Assets/Scripts/Sway.cs"
 "Assets/Scripts/Timer.cs"
 "Assets/Scripts/Weapon.cs"
+"Assets/WeaponManager.cs"
 -langversion:9.0
 
 /deterministic

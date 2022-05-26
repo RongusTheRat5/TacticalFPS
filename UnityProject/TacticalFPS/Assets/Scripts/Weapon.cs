@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    public Vector3 adsPos;
+
     public Transform muzzlePos;
     public GameObject bullet;
     public GameObject flash;
@@ -12,19 +14,28 @@ public class Weapon : MonoBehaviour
     public CamController cameraController;
     public LayerMask mask;
     private Transform holder;
-
+    public float kickback;
     public int magMaxCap;
     public int heatDecay;
+
+    public float bloom;
+    public bool fullAuto;
+    public int bulletsInShot;
+
+    public float strength;
+
     private int magCap;
 
     private float heat = 0;
 
-    private bool reloading;
-    private bool shooting;
+    public bool reloading;
+    public bool shooting;
 
     private Sway sway;
 
     private Animator animator;
+
+    public Camera weaponCam;
 
     public Vector2[] recoilValues;
     private Vector2 lastRecoil;
@@ -45,6 +56,8 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        UpdateADS();
+
         holder.localRotation = Quaternion.Slerp(holder.localRotation, Quaternion.identity, Time.deltaTime * 8f);
         holder.localPosition = Vector3.Lerp(holder.localPosition, Vector3.zero, Time.deltaTime * 8f);
 
@@ -75,11 +88,12 @@ public class Weapon : MonoBehaviour
 
         if (magCap <= 0) return;
 
-        if(Input.GetMouseButton(0))
+        if(fullAuto ? Input.GetMouseButton(0) : Input.GetMouseButtonDown(0))
         {
             magCap--;
             timer = 0;
-            Shoot();
+
+                Shoot();
         }
     }
 
@@ -94,23 +108,42 @@ public class Weapon : MonoBehaviour
         reloading = false;  
     }
 
-    private void Shoot()
+    private void UpdateADS()
     {
-        shooting = true;
-        Vector3 direction;
-        if (Physics.Raycast(cam.position, cam.forward, out RaycastHit hit,100f, mask))
+        Vector3 targetPosition = new Vector3();
+        if (sway.aim)
         {
-            direction = hit.point - muzzlePos.position;
-            direction.Normalize();
+            targetPosition = adsPos;
+            weaponCam.fieldOfView = Mathf.Lerp(weaponCam.fieldOfView, 25f, Time.deltaTime * 8f);
         }
         else
         {
-            direction = muzzlePos.forward;   
+            targetPosition = new Vector3(0, -0.1f, 0f);
+            weaponCam.fieldOfView = Mathf.Lerp(weaponCam.fieldOfView, 60f, Time.deltaTime * 8f);
         }
-        direction += Random.insideUnitSphere * 0.005f;
-        GameObject newBullet = Instantiate(bullet, muzzlePos.position, muzzlePos.rotation);
-        newBullet.GetComponent<Rigidbody>().AddForce(force * direction, ForceMode.Impulse);
-        Destroy(newBullet, 10f);
+        transform.parent.localPosition = Vector3.Lerp(transform.parent.localPosition, targetPosition, Time.deltaTime * /*ADS SPEED*/ 8f);
+    }
+
+    private void Shoot()
+    {
+        shooting = true;
+        for (int i = 0; i < bulletsInShot; i++)
+        {
+            Vector3 direction;
+            if (Physics.Raycast(cam.position, cam.forward, out RaycastHit hit, 100f, mask))
+            {
+                direction = hit.point - muzzlePos.position;
+                direction.Normalize();
+            }
+            else
+            {
+                direction = muzzlePos.forward;
+            }
+            direction += Random.insideUnitSphere * bloom * 0.005f;
+            GameObject newBullet = Instantiate(bullet, muzzlePos.position, muzzlePos.rotation);
+            newBullet.GetComponent<Rigidbody>().AddForce(force * direction, ForceMode.Impulse);
+            Destroy(newBullet, 10f);
+        }
         GameObject newFlash = Instantiate(flash, muzzlePos.position, muzzlePos.rotation);
         Destroy(newFlash, 3f);
 
@@ -120,15 +153,15 @@ public class Weapon : MonoBehaviour
             Random.Range(-0.2f, 0.2f)
             );
         if (sway.aim) recoil /= 5;
-        holder.localRotation *= Quaternion.Euler(recoil);
-        holder.localPosition += sway.aim ? new Vector3(0, 0, 1) * -0.02f : new Vector3(0, 0, 1) * -0.1f;
+        holder.localRotation *= Quaternion.Euler(recoil * kickback);
+        holder.localPosition += sway.aim ? new Vector3(0, 0, 1) * -0.02f * kickback : new Vector3(0, 0, 1) * -0.1f * kickback;
         holder.localPosition += sway.aim ? holder.right * Random.Range(-0.005f, 0.005f) : holder.right * Random.Range(-0.03f, 0.03f);
 
         audioSource.pitch = Random.Range(-0.05f, 0.05f) + 1;
         audioSource.volume = Random.Range(-0.05f, 0.05f) + 0.7f;
         audioSource.Play();
 
-        cameraController.Shake();
+        cameraController.Shake(strength);
 
         //recoil
         lastRecoil = recoilValues[Mathf.RoundToInt(heat)] * 2;
