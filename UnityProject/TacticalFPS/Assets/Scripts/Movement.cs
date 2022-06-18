@@ -68,9 +68,9 @@ public class Movement : MonoBehaviour
         currentInputs[3] = Input.GetKey(KeyCode.D);
         currentInputs[4] = Input.GetKey(KeyCode.Space);
         currentInputs[5] = Input.GetKey(KeyCode.LeftShift);
-        currentInputs[6] = Input.GetMouseButton(1);
-        currentInputs[7] = Input.GetKey(KeyCode.C);
-        currentInputs[8] = Input.GetKey(KeyCode.LeftControl);
+        currentInputs[6] = Input.GetMouseButtonDown(1);
+        currentInputs[7] = Input.GetKeyDown(KeyCode.C);
+        currentInputs[8] = Input.GetKeyDown(KeyCode.LeftControl);
     }
 
     private void FixedUpdate()
@@ -87,7 +87,7 @@ public class Movement : MonoBehaviour
         MoveState currentState = MoveState.Idle;
 
         bool grounded = Physics.Raycast(controller.transform.position - (Vector3.up * 0.95f), Vector3.down, out RaycastHit _hit, 0.1f);
-        bool toggleAimed = grounded && inputs[6] && !aimLastFrame;
+        bool toggleAimed = grounded && inputs[6];
         bool changecrouched = !cLastFrame && grounded && inputs[7];
         bool changeprone = !ctrlLastFrame && grounded && inputs[8];
         bool sprint = inputs[5] && moveDirection.y > 0 && !crouching && !prone;
@@ -126,16 +126,16 @@ public class Movement : MonoBehaviour
                 break;
             case MoveState.Crouched:
                 targetPos = new Vector3(0, 0.55f, 0);
-                xVel += sway.aim ? aimAcc * moveDirection.y : crouchAcc * moveDirection.y;
+                xVel += sway.aim ? aimAcc / 2 * moveDirection.y : crouchAcc * moveDirection.y;
                 xVel = sway.aim ? Mathf.Clamp(xVel, -aimMaxSpeed, aimMaxSpeed) : Mathf.Clamp(xVel, -crouchMaxSpeed, crouchMaxSpeed);
-                zVel += sway.aim ? aimAcc * moveDirection.x : crouchAcc * moveDirection.x;
+                zVel += sway.aim ? aimAcc / 2 * moveDirection.x : crouchAcc * moveDirection.x;
                 zVel = sway.aim ? Mathf.Clamp(zVel, -aimMaxSpeed, aimMaxSpeed) : Mathf.Clamp(zVel, -crouchMaxSpeed, crouchMaxSpeed);
                 break;
             case MoveState.Prone:
                 targetPos = new Vector3(0, 0f, 0);
-                xVel += sway.aim ? aimAcc / 2 * moveDirection.y : crouchAcc / 2 * moveDirection.y;
+                xVel += sway.aim ? aimAcc / 6 * moveDirection.y : crouchAcc / 2 * moveDirection.y;
                 xVel = sway.aim ? Mathf.Clamp(xVel, -aimMaxSpeed / 2, aimMaxSpeed / 2) : Mathf.Clamp(xVel, -crouchMaxSpeed / 2, crouchMaxSpeed / 2);
-                zVel += sway.aim ? aimAcc / 2 * moveDirection.x : crouchAcc / 2 * moveDirection.x;
+                zVel += sway.aim ? aimAcc / 6 * moveDirection.x : crouchAcc / 2 * moveDirection.x;
                 zVel = sway.aim ? Mathf.Clamp(zVel, -aimMaxSpeed / 2, aimMaxSpeed / 2) : Mathf.Clamp(zVel, -crouchMaxSpeed / 2, crouchMaxSpeed / 2);
                 break;
             case MoveState.Idle:
@@ -156,8 +156,6 @@ public class Movement : MonoBehaviour
         {
             zVel = Mathf.MoveTowards(zVel, 0f, zDeAcc);
         }
-
-        if (!groundedLastFrame && grounded) cameraTransform.GetComponent<CamController>().Shake(3f);
 
         yVel -= gravity;
 

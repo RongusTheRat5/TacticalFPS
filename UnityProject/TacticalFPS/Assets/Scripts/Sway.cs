@@ -43,7 +43,7 @@ public class Sway : MonoBehaviour
         breathSpeed = idleBreathSpeedCoefficient;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
 
         UpdateSway();
@@ -66,7 +66,7 @@ public class Sway : MonoBehaviour
         Quaternion target_rotation = weapon_origin_rotation * t_x_adj * t_y_adj * t_z_adj;
 
 
-        weaponSwayParent.localRotation = Quaternion.Slerp(weaponSwayParent.localRotation, target_rotation, Time.deltaTime * swaySmoothness);
+        weaponSwayParent.localRotation = Quaternion.Slerp(weaponSwayParent.localRotation, target_rotation, Time.fixedDeltaTime * swaySmoothness);
     }
 
     private void UpdateBreath()
@@ -82,7 +82,7 @@ public class Sway : MonoBehaviour
         float zOffset = Mathf.Cos(Time.time / 4 * breathSpeed);
         Vector3 offSet = new Vector3(xOffset * breathStrength, yOffset * breathStrength, zOffset * breathStrength);
 
-        weaponSwayParent.localPosition = Vector3.Lerp(weaponSwayParent.localPosition, weapon_origin_position + offSet, (aim) ? Time.deltaTime * 8f : Time.deltaTime * breathSpeed);
+        weaponSwayParent.localPosition = Vector3.Lerp(weaponSwayParent.localPosition, weapon_origin_position + offSet, (aim) ? Time.fixedDeltaTime * 8f : Time.fixedDeltaTime * breathSpeed);
         //cameraTransform.localPosition = Vector3.Lerp(cameraTransform.localPosition, camera_origin_position - (offSet), Time.deltaTime * breathSpeed);
     }
 

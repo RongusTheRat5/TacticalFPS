@@ -19,8 +19,12 @@ public class Weapon : MonoBehaviour
     public int heatDecay;
 
     public float bloom;
+    public float recoil;
     public bool fullAuto;
     public int bulletsInShot;
+
+    public float aimFOV;
+    public float normalFOV;
 
     public float strength;
 
@@ -114,12 +118,12 @@ public class Weapon : MonoBehaviour
         if (sway.aim)
         {
             targetPosition = adsPos;
-            weaponCam.fieldOfView = Mathf.Lerp(weaponCam.fieldOfView, 25f, Time.deltaTime * 8f);
+            weaponCam.fieldOfView = Mathf.Lerp(weaponCam.fieldOfView, aimFOV, Time.deltaTime * 8f);
         }
         else
         {
             targetPosition = new Vector3(0, -0.1f, 0f);
-            weaponCam.fieldOfView = Mathf.Lerp(weaponCam.fieldOfView, 60f, Time.deltaTime * 8f);
+            weaponCam.fieldOfView = Mathf.Lerp(weaponCam.fieldOfView, normalFOV, Time.deltaTime * 8f);
         }
         transform.parent.localPosition = Vector3.Lerp(transform.parent.localPosition, targetPosition, Time.deltaTime * /*ADS SPEED*/ 8f);
     }
@@ -145,15 +149,15 @@ public class Weapon : MonoBehaviour
             Destroy(newBullet, 10f);
         }
         GameObject newFlash = Instantiate(flash, muzzlePos.position, muzzlePos.rotation);
-        Destroy(newFlash, 3f);
+        Destroy(newFlash, 0.05f);
 
-        Vector3 recoil = new Vector3(
-            Random.Range(-1, -0.5f) * 4,
-            Random.Range(-0.2f, 0.2f),
-            Random.Range(-0.2f, 0.2f)
+        Vector3 l_recoil = new Vector3(
+            Random.Range(-1, -0.5f) * recoil,
+            Random.Range(-0.2f, 0.2f) * recoil,
+            Random.Range(-0.2f, 0.2f) * recoil
             );
-        if (sway.aim) recoil /= 5;
-        holder.localRotation *= Quaternion.Euler(recoil * kickback);
+        if (sway.aim) l_recoil /= 5;
+        holder.localRotation *= Quaternion.Euler(l_recoil);
         holder.localPosition += sway.aim ? new Vector3(0, 0, 1) * -0.02f * kickback : new Vector3(0, 0, 1) * -0.1f * kickback;
         holder.localPosition += sway.aim ? holder.right * Random.Range(-0.005f, 0.005f) : holder.right * Random.Range(-0.03f, 0.03f);
 

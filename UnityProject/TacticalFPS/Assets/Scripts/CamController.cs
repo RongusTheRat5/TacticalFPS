@@ -13,6 +13,8 @@ public class CamController : MonoBehaviour
     public float duration;
     public AnimationCurve curve;
 
+    public Vector3 targetPos;
+
     private void Start()
     {
         verticalRotation = transform.localEulerAngles.x;
@@ -27,8 +29,9 @@ public class CamController : MonoBehaviour
 
     private void Look()
     {
-        float mouseVertical = -Input.GetAxis("Mouse Y");
-        float mouseHorizontal = Input.GetAxis("Mouse X");
+
+        float mouseVertical = -Input.GetAxisRaw("Mouse Y");
+        float mouseHorizontal = Input.GetAxisRaw("Mouse X");
 
         horizontalRotation += mouseHorizontal * sensitivity * Time.deltaTime;
 

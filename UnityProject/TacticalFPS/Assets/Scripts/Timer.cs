@@ -17,7 +17,6 @@ public class Timer : MonoBehaviour
     {
         if(GameObject.FindGameObjectsWithTag("Target").Length != count)
         {
-            Debug.Log("E");
             if (!started) started = true;
             count = GameObject.FindGameObjectsWithTag("Target").Length;
             if (count == 0) started = false;
